@@ -1,0 +1,30 @@
+server: 
+  port: 8743
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/alalgo/spring-cloud-conf
+          search-paths: /
+          username:  alalgo 
+          password:  2019qalbaba
+    bus:
+      trace:
+        enabled: true      
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: xjx
+    password: xjx       
+eureka:
+  client:
+    service-url:
+      defalutZone: http://localhost:8761/eureka/
+management: 
+  endpoints:     
+    web: 
+      exposure: 
+        include: bus-refresh               

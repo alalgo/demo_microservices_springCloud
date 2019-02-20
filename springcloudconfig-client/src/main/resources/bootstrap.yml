@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      name: alalgo-config #对应git仓库中的{application}
+      profile: dev #对应git仓库中的{label}
+      #uri: http://localhost:8743/ #spring cloud config server 端url
+      label: master
+      discovery:
+        enabled: true
+        service-id: springcloud-config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/        

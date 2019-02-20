@@ -1,0 +1,18 @@
+server: 
+  port: 8093
+spring:
+  application:
+    name: zipkin-client
+  zipkin:
+    base-url: http://localhost:8092 #zipkin 服务器地址
+  sleuth:
+    sampler:
+      probability: 1.0
+eureka: 
+  instance:
+    prefer-ip-address: true  # 注册服务的时候使用服务的ip地址
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true      

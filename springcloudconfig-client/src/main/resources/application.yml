@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-cloud-config-client
+server:
+  port: 8349
+management: 
+  endpoints:     
+    web: 
+      exposure: 
+        include: "*"   
