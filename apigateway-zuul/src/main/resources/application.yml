@@ -3,3 +3,11 @@ spring:
     name: gateway-zuul
 server: 
   port: 8888    
+#zuul:  
+  #routes:
+    #testRoute:
+      #path: /api-a-url/**
+      #url: http://localhost:8002/
+      #service-id: eureka-service #默认情况下，Zuul会代理所有注册到Eureka Server的微服务,所以不需要这样定义了
+      
+    

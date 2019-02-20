@@ -16,6 +16,10 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-		</dependency>      
+		</dependency> 
+		<dependency><!-- Zuul 中实现路由重试的依赖包 -->
+			<groupId>org.springframework.retry</groupId>
+			<artifactId>spring-retry</artifactId>
+			</dependency>		
   </dependencies>
 </project>

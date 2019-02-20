@@ -31,12 +31,14 @@
   <modules>
     <module>eureka-server</module>
     <module>eureka-service</module>
-    
     <module>consumer-ribbon</module>
     <module>consumer-feign</module>
-    
-    <module>D:/MyEclipse CI/workspace/eureka-service2</module>
+    <module>eureka-service2</module>
     <module>apigateway-zuul</module>
+    <module>springcloudconfig-server</module>
+    <module>springcloudconfig-client</module>
+    <module>zipkin-server</module>
+    <module>zipkin-client</module>
   </modules>
   
   <dependencies> 
