@@ -10,7 +10,7 @@ spring:
           uri: https://github.com/alalgo/spring-cloud-conf
           search-paths: /
           username:  alalgo 
-          password:  2019qalbaba
+          password:  xxx
     bus:
       trace:
         enabled: true      
