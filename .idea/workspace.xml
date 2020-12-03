@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b35837a-b8d1-4a3e-832c-8d2733836d51" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-zuul/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-zuul/src/main/java/org/zuul/AccessFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-zuul/src/main/java/org/zuul/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-zuul/src/main/java/org/zuul/ProducerFallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-zuul/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-feign/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-feign/src/main/java/org/consumer/feign/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-feign/src/main/java/org/consumer/feign/FeginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-feign/src/main/java/org/consumer/feign/ServiveClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-feign/src/main/java/org/consumer/feign/ServiveClientHystrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-feign/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-feign/src/test/java/org/consumer/feign/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-ribbon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-ribbon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/org/eureka/server/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/org/eureka/server/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/java/org/eureka/client/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/java/org/eureka/client/controller/TickerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/java/org/eureka/client/service/TicketService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/java/org/eureka/client/service/impl/TicketServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudconfig-client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudconfig-client/src/main/java/org/alalgo/configclient/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudconfig-client/src/main/java/org/alalgo/configclient/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudconfig-client/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudconfig-client/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudconfig-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudconfig-server/src/main/java/org/alalgo/cofigcenter/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudconfig-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin-client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin-client/src/main/java/org/alalgo/zipkinclient/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin-client/src/main/java/org/alalgo/zipkinclient/ZipkinclientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin-client/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin-server/src/main/java/org/alalgo/zipkinserver/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin-server/src/main/resources/application.yml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/alalgo-hystrix/target/" />
+    <ignored path="$PROJECT_DIR$/alalgo-zipkin/target/" />
+    <ignored path="$PROJECT_DIR$/alalgo-provider/alalgo-provider-usc/target/" />
+    <ignored path="$PROJECT_DIR$/consumer-ribbon/target/" />
+    <ignored path="$PROJECT_DIR$/alalgo-provider/alalgo-provider-osc/target/" />
+    <ignored path="$PROJECT_DIR$/alalgo-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/alalgo-provider/target/" />
+    <ignored path="$PROJECT_DIR$/alalgo-confserver/target/" />
+    <ignored path="$PROJECT_DIR$/alalgo-oauth2server/target/" />
+    <ignored path="$PROJECT_DIR$/alalgo-registry/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer</OriginalElement>
+              <nodes>
+                <node x="481.0" y="240.0">org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer</node>
+                <node x="267.5" y="160.0">org.springframework.security.config.annotation.SecurityConfigurerAdapter</node>
+                <node x="301.5" y="0.0">org.springframework.security.config.annotation.SecurityBuilder</node>
+                <node x="276.0" y="240.0">org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2ClientConfigurer</node>
+                <node x="0.0" y="240.0">org.springframework.security.config.annotation.authentication.configurers.provisioning.JdbcUserDetailsManagerConfigurer</node>
+                <node x="247.0" y="80.0">org.springframework.security.config.annotation.SecurityConfigurer</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="org.springframework.security.config.annotation.SecurityConfigurerAdapter" target="org.springframework.security.config.annotation.SecurityConfigurer">
+                  <point x="-50.5" y="-15.0" />
+                  <point x="318.0" y="135.0" />
+                  <point x="324.5" y="135.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+                  <point x="0.0" y="-15.0" />
+                  <point x="592.0" y="215.0" />
+                  <point x="435.8333333333333" y="215.0" />
+                  <point x="67.33333333333331" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.authentication.configurers.provisioning.JdbcUserDetailsManagerConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+                  <point x="0.0" y="-15.0" />
+                  <point x="128.0" y="215.0" />
+                  <point x="301.1666666666667" y="215.0" />
+                  <point x="-67.33333333333331" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.SecurityConfigurer" target="org.springframework.security.config.annotation.SecurityBuilder">
+                  <point x="0.0" y="-15.0" />
+                  <point x="324.5" y="55.0" />
+                  <point x="335.0" y="55.0" />
+                  <point x="-33.5" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2ClientConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.SecurityConfigurerAdapter" target="org.springframework.security.config.annotation.SecurityBuilder">
+                  <point x="50.5" y="-15.0" />
+                  <point x="419.0" y="135.0" />
+                  <point x="412.5" y="135.0" />
+                  <point x="412.5" y="55.0" />
+                  <point x="402.0" y="55.0" />
+                  <point x="33.5" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="3.0" y="30.0" />
+              <SelectedNodes>
+                <node>org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer</node>
+              </SelectedNodes>
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alalgo-gateway/src/main/java/org/alalgo/gateway/conf/SecurityConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="10" column="59" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter</OriginalElement>
+              <nodes>
+                <node x="54.5" y="0.0">org.springframework.security.config.annotation.SecurityBuilder</node>
+                <node x="83.25" y="240.0">org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter</node>
+                <node x="232.5" y="160.0">org.springframework.core.annotation.Order</node>
+                <node x="0.0" y="395.0">org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration</node>
+                <node x="0.0" y="80.0">org.springframework.security.config.annotation.SecurityConfigurer</node>
+                <node x="31.0" y="315.0">org.springframework.web.servlet.config.annotation.WebMvcConfigurer</node>
+                <node x="30.5" y="160.0">org.springframework.security.config.annotation.web.WebSecurityConfigurer</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter" target="org.springframework.security.config.annotation.web.WebSecurityConfigurer">
+                  <point x="-57.25" y="-15.0" />
+                  <point x="140.5" y="215.0" />
+                  <point x="121.5" y="215.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter" target="org.springframework.core.annotation.Order">
+                  <point x="57.25" y="-15.0" />
+                  <point x="255.0" y="215.0" />
+                  <point x="274.0" y="215.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.web.WebSecurityConfigurer" target="org.springframework.security.config.annotation.SecurityBuilder">
+                  <point x="45.5" y="-15.0" />
+                  <point x="167.0" y="135.0" />
+                  <point x="165.5" y="135.0" />
+                  <point x="165.5" y="55.0" />
+                  <point x="155.0" y="55.0" />
+                  <point x="33.5" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.web.WebSecurityConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurer">
+                  <point x="-45.5" y="-15.0" />
+                  <point x="76.0" y="135.0" />
+                  <point x="77.5" y="135.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.SecurityConfigurer" target="org.springframework.security.config.annotation.SecurityBuilder">
+                  <point x="0.0" y="-15.0" />
+                  <point x="77.5" y="55.0" />
+                  <point x="88.0" y="55.0" />
+                  <point x="-33.5" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration" target="org.springframework.web.servlet.config.annotation.WebMvcConfigurer">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-153.5" y="30.0" />
+              <SelectedNodes>
+                <node>org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration</node>
+              </SelectedNodes>
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alalgo-oauth2server/src/main/java/org/alalgo/Authserver/conf/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.2.RELEASE/spring-security-config-5.1.2.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="161" column="26" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.2.RELEASE/spring-security-config-5.1.2.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/configurers/provisioning/JdbcUserDetailsManagerConfigurer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="133" column="23" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/org.springframework.security.provisioning.JdbcUserDetailsManager">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>org.springframework.security.provisioning.JdbcUserDetailsManager</OriginalElement>
+              <nodes>
+                <node x="305.0" y="80.0">org.springframework.dao.support.DaoSupport</node>
+                <node x="447.0" y="240.0">org.springframework.security.provisioning.GroupManager</node>
+                <node x="302.0" y="240.0">org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl</node>
+                <node x="0.0" y="320.0">org.springframework.security.provisioning.InMemoryUserDetailsManager</node>
+                <node x="457.5" y="160.0">org.springframework.context.MessageSourceAware</node>
+                <node x="71.75" y="240.0">org.springframework.security.provisioning.UserDetailsManager</node>
+                <node x="116.5" y="160.0">org.springframework.security.core.userdetails.UserDetailsService</node>
+                <node x="291.5" y="160.0">org.springframework.jdbc.core.support.JdbcDaoSupport</node>
+                <node x="504.0" y="80.0">org.springframework.beans.factory.Aware</node>
+                <node x="267.5" y="320.0">org.springframework.security.provisioning.JdbcUserDetailsManager</node>
+                <node x="297.0" y="0.0">org.springframework.beans.factory.InitializingBean</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl" target="org.springframework.context.MessageSourceAware">
+                  <point x="41.666666666666686" y="-15.0" />
+                  <point x="406.1666666666667" y="215.0" />
+                  <point x="546.0" y="215.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.provisioning.JdbcUserDetailsManager" target="org.springframework.security.provisioning.UserDetailsManager">
+                  <point x="-64.66666666666669" y="-15.0" />
+                  <point x="299.8333333333333" y="295.0" />
+                  <point x="197.0" y="295.0" />
+                  <point x="41.75" y="15.0" />
+                </edge>
+                <edge source="org.springframework.jdbc.core.support.JdbcDaoSupport" target="org.springframework.dao.support.DaoSupport">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl" target="org.springframework.security.core.userdetails.UserDetailsService">
+                  <point x="-41.66666666666666" y="-15.0" />
+                  <point x="322.83333333333337" y="215.0" />
+                  <point x="232.75" y="215.0" />
+                  <point x="38.75" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.provisioning.JdbcUserDetailsManager" target="org.springframework.security.provisioning.GroupManager">
+                  <point x="64.66666666666669" y="-15.0" />
+                  <point x="429.1666666666667" y="295.0" />
+                  <point x="516.0" y="295.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.dao.support.DaoSupport" target="org.springframework.beans.factory.InitializingBean">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.provisioning.InMemoryUserDetailsManager" target="org.springframework.security.provisioning.UserDetailsManager">
+                  <point x="0.0" y="-15.0" />
+                  <point x="-41.75" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.provisioning.UserDetailsManager" target="org.springframework.security.core.userdetails.UserDetailsService">
+                  <point x="0.0" y="-15.0" />
+                  <point x="-38.75" y="15.0" />
+                </edge>
+                <edge source="org.springframework.context.MessageSourceAware" target="org.springframework.beans.factory.Aware">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.provisioning.JdbcUserDetailsManager" target="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl" target="org.springframework.jdbc.core.support.JdbcDaoSupport">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="281.5" y="175.0" />
+              <SelectedNodes>
+                <node>org.springframework.security.provisioning.JdbcUserDetailsManager</node>
+              </SelectedNodes>
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder</OriginalElement>
+              <nodes>
+                <node x="125.5" y="0.0">org.springframework.security.config.annotation.SecurityBuilder</node>
+                <node x="18.25" y="160.0">org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder</node>
+                <node x="113.30357142857142" y="240.0">org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder</node>
+                <node x="0.0" y="80.0">org.springframework.security.config.annotation.AbstractSecurityBuilder</node>
+                <node x="203.0" y="80.0">org.springframework.security.config.annotation.authentication.ProviderManagerBuilder</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder" target="org.springframework.security.config.annotation.SecurityBuilder">
+                  <point x="61.75" y="-15.0" />
+                  <point x="203.5" y="135.0" />
+                  <point x="192.5" y="135.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder" target="org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder">
+                  <point x="-56.0" y="-15.0" />
+                  <point x="169.30357142857142" y="215.0" />
+                  <point x="141.75" y="215.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder" target="org.springframework.security.config.annotation.authentication.ProviderManagerBuilder">
+                  <point x="56.0" y="-15.0" />
+                  <point x="281.30357142857144" y="215.0" />
+                  <point x="298.5" y="215.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.authentication.ProviderManagerBuilder" target="org.springframework.security.config.annotation.SecurityBuilder">
+                  <point x="0.0" y="-15.0" />
+                  <point x="298.5" y="55.0" />
+                  <point x="237.16666666666666" y="55.0" />
+                  <point x="44.66666666666666" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.AbstractSecurityBuilder" target="org.springframework.security.config.annotation.SecurityBuilder">
+                  <point x="0.0" y="-15.0" />
+                  <point x="91.0" y="55.0" />
+                  <point x="147.83333333333334" y="55.0" />
+                  <point x="-44.66666666666666" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder" target="org.springframework.security.config.annotation.AbstractSecurityBuilder">
+                  <point x="-61.75" y="-15.0" />
+                  <point x="80.0" y="135.0" />
+                  <point x="91.0" y="135.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-114.5" y="30.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/org.springframework.security.oauth2.provider.ClientDetailsService">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>org.springframework.security.oauth2.provider.ClientDetailsService</OriginalElement>
+              <nodes>
+                <node x="0.0" y="80.0">org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService</node>
+                <node x="240.0" y="80.0">org.springframework.security.oauth2.provider.client.JdbcClientDetailsService</node>
+                <node x="284.75" y="0.0">org.springframework.security.oauth2.provider.ClientRegistrationService</node>
+                <node x="70.0" y="0.0">org.springframework.security.oauth2.provider.ClientDetailsService</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="org.springframework.security.oauth2.provider.client.JdbcClientDetailsService" target="org.springframework.security.oauth2.provider.ClientRegistrationService">
+                  <point x="46.75" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.oauth2.provider.client.JdbcClientDetailsService" target="org.springframework.security.oauth2.provider.ClientDetailsService">
+                  <point x="-46.75" y="-15.0" />
+                  <point x="286.75" y="55.0" />
+                  <point x="190.0" y="55.0" />
+                  <point x="40.0" y="15.0" />
+                </edge>
+                <edge source="org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService" target="org.springframework.security.oauth2.provider.ClientDetailsService">
+                  <point x="0.0" y="-15.0" />
+                  <point x="-40.0" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.1" x="-163.18181818181822" y="-80.45454545454547" />
+              <SelectedNodes>
+                <node>org.springframework.security.oauth2.provider.ClientDetailsService</node>
+              </SelectedNodes>
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alalgo-gateway/src/main/java/org/alalgo/gateway/conf/oauth2client/Oauth2ClientResources.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-34" />
+    <option name="y" value="70" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="alalgo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="alalgo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="alalgo-oauth2server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="alalgo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="alalgo-oauth2server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="alalgo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="alalgo-oauth2server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="alalgo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="alalgo-oauth2server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="alalgo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="alalgo-oauth2server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.alalgo.Authserver" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="alalgo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="alalgo-oauth2server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.alalgo.Authserver" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="conf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-security-oauth/samples/oauth2" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UscApplication">
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="consumer-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.consumer.discovery.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="alalgo-oauth2server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.alalgo.Authserver.AuthserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="alalgo-confserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.alalgo.cofigcenter.ConfserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="apigateway-zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.alalgo.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OscApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="alalgo-provider-osc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.alalgo.osc.OscApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="alalgo-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.alalgo.registry.RegistryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UscApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="alalgo-provider-usc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.alalgo.usc.UscApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UscApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="alalgo-hystrix" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.alalgo.hystrix.UscApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZipkinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="alalgo-zipkin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.alalgo.zipkinserver.ZipkinApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b35837a-b8d1-4a3e-832c-8d2733836d51" name="Default Changelist" comment="" />
+      <created>1552459352662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552459352662</updated>
+      <workItem from="1552459354006" duration="89000" />
+      <workItem from="1552459837577" duration="4372000" />
+      <workItem from="1552527327331" duration="11035000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15496000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20988539" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3295129" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.15830946" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/alalgo-gateway/src/main/java/org/alalgo/gateway/GatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/client/RestOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/filter/GenericFilterBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="72" column="79" lean-forward="true" selection-start-line="72" selection-start-column="79" selection-end-line="72" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.boot.autoconfigure.security.oauth2.resource.SpringSocialTokenServices</node>
+            <node x="" y="">org.springframework.security.oauth2.provider.token.RemoteTokenServices</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices</node>
+            <node x="" y="">org.springframework.security.oauth2.provider.token.DefaultTokenServices</node>
+            <node x="" y="">org.springframework.security.oauth2.provider.token.ResourceServerTokenServices</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.1" x="463.0" y="55.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.oauth2.client.OAuth2ClientContext">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.oauth2.client.OAuth2ClientContext</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.security.oauth2.client.DefaultOAuth2ClientContext</node>
+            <node x="" y="">org.springframework.security.oauth2.client.OAuth2ClientContext</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="84.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.oauth2.client.OAuth2RestTemplate">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.oauth2.client.OAuth2RestTemplate</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.http.client.support.HttpAccessor</node>
+            <node x="" y="">org.springframework.web.client.RestOperations</node>
+            <node x="" y="">org.springframework.http.client.support.InterceptingHttpAccessor</node>
+            <node x="" y="">org.springframework.security.oauth2.client.OAuth2RestOperations</node>
+            <node x="" y="">org.springframework.security.oauth2.client.OAuth2RestTemplate</node>
+            <node x="" y="">org.springframework.web.client.RestTemplate</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="358.0" y="135.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.context.ApplicationEventPublisherAware</node>
+            <node x="" y="">org.springframework.web.context.ServletContextAware</node>
+            <node x="" y="">org.springframework.context.MessageSourceAware</node>
+            <node x="" y="">org.springframework.beans.factory.Aware</node>
+            <node x="" y="">org.springframework.beans.factory.InitializingBean</node>
+            <node x="" y="">org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter</node>
+            <node x="" y="">org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter</node>
+            <node x="" y="">org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter</node>
+            <node x="" y="">org.springframework.context.EnvironmentAware</node>
+            <node x="" y="">org.springframework.core.env.EnvironmentCapable</node>
+            <node x="" y="">org.springframework.beans.factory.DisposableBean</node>
+            <node x="" y="">org.springframework.web.filter.GenericFilterBean</node>
+            <node x="" y="">javax.servlet.Filter</node>
+            <node x="" y="">org.springframework.beans.factory.BeanNameAware</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0212389380530973" x="1024.0" y="185.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler</node>
+            <node x="" y="">org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler</node>
+            <node x="" y="">org.springframework.security.web.authentication.ForwardAuthenticationSuccessHandler</node>
+            <node x="" y="">org.springframework.security.web.authentication.AuthenticationSuccessHandler</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="284.0" y="55.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails</node>
+            <node x="" y="">org.springframework.security.oauth2.client.token.grant.redirect.AbstractRedirectResourceDetails</node>
+            <node x="" y="">org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails</node>
+            <node x="" y="">org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="134.0" y="135.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.core.env.Environment">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.core.env.Environment</OriginalElement>
+          <nodes>
+            <node x="21.25" y="0.0">org.springframework.core.env.PropertyResolver</node>
+            <node x="0.0" y="80.0">org.springframework.core.env.Environment</node>
+            <node x="11.25" y="160.0">org.springframework.core.env.AbstractEnvironment</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.core.env.Environment" target="org.springframework.core.env.PropertyResolver">
+              <point x="0.0" y="-15.0" />
+              <point x="60.0" y="55.0" />
+              <point x="58.25" y="55.0" />
+              <point x="-37.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.core.env.AbstractEnvironment" target="org.springframework.core.env.PropertyResolver">
+              <point x="42.0" y="-15.0" />
+              <point x="137.25" y="135.0" />
+              <point x="130.5" y="135.0" />
+              <point x="130.5" y="55.0" />
+              <point x="132.25" y="55.0" />
+              <point x="37.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.core.env.AbstractEnvironment" target="org.springframework.core.env.Environment">
+              <point x="-42.0" y="-15.0" />
+              <point x="53.25" y="135.0" />
+              <point x="60.0" y="135.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="74.0" y="55.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alalgo-gateway/src/main/java/org/alalgo/gateway/conf/oauth2client/Oauth2ClientConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alalgo-oauth2server/src/main/java/org/alalgo/Authserver/conf/DataSourceConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alalgo-oauth2server/src/main/java/org/alalgo/Authserver/conf/OAuth2AuthorizationServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alalgo-gateway/src/main/java/org/alalgo/gateway/conf/oauth2client/Oauth2ClientResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.oauth2.provider.ClientDetailsService">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.oauth2.provider.ClientDetailsService</OriginalElement>
+          <nodes>
+            <node x="0.0" y="80.0">org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService</node>
+            <node x="240.0" y="80.0">org.springframework.security.oauth2.provider.client.JdbcClientDetailsService</node>
+            <node x="284.75" y="0.0">org.springframework.security.oauth2.provider.ClientRegistrationService</node>
+            <node x="70.0" y="0.0">org.springframework.security.oauth2.provider.ClientDetailsService</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.security.oauth2.provider.client.JdbcClientDetailsService" target="org.springframework.security.oauth2.provider.ClientRegistrationService">
+              <point x="46.75" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.oauth2.provider.client.JdbcClientDetailsService" target="org.springframework.security.oauth2.provider.ClientDetailsService">
+              <point x="-46.75" y="-15.0" />
+              <point x="286.75" y="55.0" />
+              <point x="190.0" y="55.0" />
+              <point x="40.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService" target="org.springframework.security.oauth2.provider.ClientDetailsService">
+              <point x="0.0" y="-15.0" />
+              <point x="-40.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.1" x="-163.18181818181822" y="-80.45454545454547" />
+          <SelectedNodes>
+            <node>org.springframework.security.oauth2.provider.ClientDetailsService</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer</OriginalElement>
+          <nodes>
+            <node x="481.0" y="240.0">org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer</node>
+            <node x="267.5" y="160.0">org.springframework.security.config.annotation.SecurityConfigurerAdapter</node>
+            <node x="301.5" y="0.0">org.springframework.security.config.annotation.SecurityBuilder</node>
+            <node x="276.0" y="240.0">org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2ClientConfigurer</node>
+            <node x="0.0" y="240.0">org.springframework.security.config.annotation.authentication.configurers.provisioning.JdbcUserDetailsManagerConfigurer</node>
+            <node x="247.0" y="80.0">org.springframework.security.config.annotation.SecurityConfigurer</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.security.config.annotation.SecurityConfigurerAdapter" target="org.springframework.security.config.annotation.SecurityConfigurer">
+              <point x="-50.5" y="-15.0" />
+              <point x="318.0" y="135.0" />
+              <point x="324.5" y="135.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+              <point x="0.0" y="-15.0" />
+              <point x="592.0" y="215.0" />
+              <point x="435.8333333333333" y="215.0" />
+              <point x="67.33333333333331" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.authentication.configurers.provisioning.JdbcUserDetailsManagerConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+              <point x="0.0" y="-15.0" />
+              <point x="128.0" y="215.0" />
+              <point x="301.1666666666667" y="215.0" />
+              <point x="-67.33333333333331" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.SecurityConfigurer" target="org.springframework.security.config.annotation.SecurityBuilder">
+              <point x="0.0" y="-15.0" />
+              <point x="324.5" y="55.0" />
+              <point x="335.0" y="55.0" />
+              <point x="-33.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2ClientConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.SecurityConfigurerAdapter" target="org.springframework.security.config.annotation.SecurityBuilder">
+              <point x="50.5" y="-15.0" />
+              <point x="419.0" y="135.0" />
+              <point x="412.5" y="135.0" />
+              <point x="412.5" y="55.0" />
+              <point x="402.0" y="55.0" />
+              <point x="33.5" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="3.0" y="30.0" />
+          <SelectedNodes>
+            <node>org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alalgo-gateway/src/main/java/org/alalgo/gateway/conf/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter</OriginalElement>
+          <nodes>
+            <node x="54.5" y="0.0">org.springframework.security.config.annotation.SecurityBuilder</node>
+            <node x="83.25" y="240.0">org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter</node>
+            <node x="232.5" y="160.0">org.springframework.core.annotation.Order</node>
+            <node x="0.0" y="395.0">org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration</node>
+            <node x="0.0" y="80.0">org.springframework.security.config.annotation.SecurityConfigurer</node>
+            <node x="31.0" y="315.0">org.springframework.web.servlet.config.annotation.WebMvcConfigurer</node>
+            <node x="30.5" y="160.0">org.springframework.security.config.annotation.web.WebSecurityConfigurer</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter" target="org.springframework.security.config.annotation.web.WebSecurityConfigurer">
+              <point x="-57.25" y="-15.0" />
+              <point x="140.5" y="215.0" />
+              <point x="121.5" y="215.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter" target="org.springframework.core.annotation.Order">
+              <point x="57.25" y="-15.0" />
+              <point x="255.0" y="215.0" />
+              <point x="274.0" y="215.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.web.WebSecurityConfigurer" target="org.springframework.security.config.annotation.SecurityBuilder">
+              <point x="45.5" y="-15.0" />
+              <point x="167.0" y="135.0" />
+              <point x="165.5" y="135.0" />
+              <point x="165.5" y="55.0" />
+              <point x="155.0" y="55.0" />
+              <point x="33.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.web.WebSecurityConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurer">
+              <point x="-45.5" y="-15.0" />
+              <point x="76.0" y="135.0" />
+              <point x="77.5" y="135.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.SecurityConfigurer" target="org.springframework.security.config.annotation.SecurityBuilder">
+              <point x="0.0" y="-15.0" />
+              <point x="77.5" y="55.0" />
+              <point x="88.0" y="55.0" />
+              <point x="-33.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration" target="org.springframework.web.servlet.config.annotation.WebMvcConfigurer">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-153.5" y="30.0" />
+          <SelectedNodes>
+            <node>org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder</OriginalElement>
+          <nodes>
+            <node x="125.5" y="0.0">org.springframework.security.config.annotation.SecurityBuilder</node>
+            <node x="18.25" y="160.0">org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder</node>
+            <node x="113.30357142857142" y="240.0">org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder</node>
+            <node x="0.0" y="80.0">org.springframework.security.config.annotation.AbstractSecurityBuilder</node>
+            <node x="203.0" y="80.0">org.springframework.security.config.annotation.authentication.ProviderManagerBuilder</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder" target="org.springframework.security.config.annotation.SecurityBuilder">
+              <point x="61.75" y="-15.0" />
+              <point x="203.5" y="135.0" />
+              <point x="192.5" y="135.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder" target="org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder">
+              <point x="-56.0" y="-15.0" />
+              <point x="169.30357142857142" y="215.0" />
+              <point x="141.75" y="215.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder" target="org.springframework.security.config.annotation.authentication.ProviderManagerBuilder">
+              <point x="56.0" y="-15.0" />
+              <point x="281.30357142857144" y="215.0" />
+              <point x="298.5" y="215.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.authentication.ProviderManagerBuilder" target="org.springframework.security.config.annotation.SecurityBuilder">
+              <point x="0.0" y="-15.0" />
+              <point x="298.5" y="55.0" />
+              <point x="237.16666666666666" y="55.0" />
+              <point x="44.66666666666666" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.AbstractSecurityBuilder" target="org.springframework.security.config.annotation.SecurityBuilder">
+              <point x="0.0" y="-15.0" />
+              <point x="91.0" y="55.0" />
+              <point x="147.83333333333334" y="55.0" />
+              <point x="-44.66666666666666" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder" target="org.springframework.security.config.annotation.AbstractSecurityBuilder">
+              <point x="-61.75" y="-15.0" />
+              <point x="80.0" y="135.0" />
+              <point x="91.0" y="135.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-114.5" y="30.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alalgo-oauth2server/src/main/java/org/alalgo/Authserver/conf/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.2.RELEASE/spring-security-config-5.1.2.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="161" column="26" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.2.RELEASE/spring-security-config-5.1.2.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/configurers/provisioning/JdbcUserDetailsManagerConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="133" column="23" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.provisioning.JdbcUserDetailsManager">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.provisioning.JdbcUserDetailsManager</OriginalElement>
+          <nodes>
+            <node x="305.0" y="80.0">org.springframework.dao.support.DaoSupport</node>
+            <node x="447.0" y="240.0">org.springframework.security.provisioning.GroupManager</node>
+            <node x="302.0" y="240.0">org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl</node>
+            <node x="0.0" y="320.0">org.springframework.security.provisioning.InMemoryUserDetailsManager</node>
+            <node x="457.5" y="160.0">org.springframework.context.MessageSourceAware</node>
+            <node x="71.75" y="240.0">org.springframework.security.provisioning.UserDetailsManager</node>
+            <node x="116.5" y="160.0">org.springframework.security.core.userdetails.UserDetailsService</node>
+            <node x="291.5" y="160.0">org.springframework.jdbc.core.support.JdbcDaoSupport</node>
+            <node x="504.0" y="80.0">org.springframework.beans.factory.Aware</node>
+            <node x="267.5" y="320.0">org.springframework.security.provisioning.JdbcUserDetailsManager</node>
+            <node x="297.0" y="0.0">org.springframework.beans.factory.InitializingBean</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl" target="org.springframework.context.MessageSourceAware">
+              <point x="41.666666666666686" y="-15.0" />
+              <point x="406.1666666666667" y="215.0" />
+              <point x="546.0" y="215.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.provisioning.JdbcUserDetailsManager" target="org.springframework.security.provisioning.UserDetailsManager">
+              <point x="-64.66666666666669" y="-15.0" />
+              <point x="299.8333333333333" y="295.0" />
+              <point x="197.0" y="295.0" />
+              <point x="41.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.jdbc.core.support.JdbcDaoSupport" target="org.springframework.dao.support.DaoSupport">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl" target="org.springframework.security.core.userdetails.UserDetailsService">
+              <point x="-41.66666666666666" y="-15.0" />
+              <point x="322.83333333333337" y="215.0" />
+              <point x="232.75" y="215.0" />
+              <point x="38.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.provisioning.JdbcUserDetailsManager" target="org.springframework.security.provisioning.GroupManager">
+              <point x="64.66666666666669" y="-15.0" />
+              <point x="429.1666666666667" y="295.0" />
+              <point x="516.0" y="295.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.dao.support.DaoSupport" target="org.springframework.beans.factory.InitializingBean">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.provisioning.InMemoryUserDetailsManager" target="org.springframework.security.provisioning.UserDetailsManager">
+              <point x="0.0" y="-15.0" />
+              <point x="-41.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.provisioning.UserDetailsManager" target="org.springframework.security.core.userdetails.UserDetailsService">
+              <point x="0.0" y="-15.0" />
+              <point x="-38.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.context.MessageSourceAware" target="org.springframework.beans.factory.Aware">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.provisioning.JdbcUserDetailsManager" target="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl" target="org.springframework.jdbc.core.support.JdbcDaoSupport">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="281.5" y="175.0" />
+          <SelectedNodes>
+            <node>org.springframework.security.provisioning.JdbcUserDetailsManager</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

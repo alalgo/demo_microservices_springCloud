@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices</OriginalElement>
+  <nodes>
+    <node x="388.0" y="80.0">org.springframework.boot.autoconfigure.security.oauth2.resource.SpringSocialTokenServices</node>
+    <node x="192.00000000000003" y="80.0">org.springframework.security.oauth2.provider.token.RemoteTokenServices</node>
+    <node x="611.0" y="80.0">org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices</node>
+    <node x="0.0" y="80.0">org.springframework.security.oauth2.provider.token.DefaultTokenServices</node>
+    <node x="273.75" y="0.0">org.springframework.security.oauth2.provider.token.ResourceServerTokenServices</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices" target="org.springframework.security.oauth2.provider.token.ResourceServerTokenServices">
+      <point x="0.0" y="-15.0" />
+      <point x="701.5" y="50.0" />
+      <point x="468.0" y="50.0" />
+      <point x="83.25" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.oauth2.provider.token.RemoteTokenServices" target="org.springframework.security.oauth2.provider.token.ResourceServerTokenServices">
+      <point x="0.0" y="-15.0" />
+      <point x="280.0" y="60.0" />
+      <point x="357.0" y="60.0" />
+      <point x="-27.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.oauth2.provider.token.DefaultTokenServices" target="org.springframework.security.oauth2.provider.token.ResourceServerTokenServices">
+      <point x="0.0" y="-15.0" />
+      <point x="86.0" y="50.0" />
+      <point x="301.5" y="50.0" />
+      <point x="-83.25" y="15.0" />
+    </edge>
+    <edge source="org.springframework.boot.autoconfigure.security.oauth2.resource.SpringSocialTokenServices" target="org.springframework.security.oauth2.provider.token.ResourceServerTokenServices">
+      <point x="0.0" y="-15.0" />
+      <point x="489.5" y="60.0" />
+      <point x="412.5" y="60.0" />
+      <point x="27.75" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="462.5" y="55.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

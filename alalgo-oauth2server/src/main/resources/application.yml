@@ -1,0 +1,28 @@
+server:
+  servlet:
+    context-path: /auth2server
+  port: 8093
+
+spring:
+  application:
+    name: oauthserver
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloudIntegration
+    username: root
+    password: root
+
+#注册
+eureka:
+  client:
+    service-url:
+      defalutZone: http://192.168.16.63:8761/eureka/
+      
+management: 
+  endpoints:
+    web:
+      exposure:
+        include: "*"    
+              
+debug: false
+
+      

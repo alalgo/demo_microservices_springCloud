@@ -1,0 +1,17 @@
+server: 
+  port: 8075
+  servlet:
+    session:
+      cookie:
+        name: ORDERSESSION
+         
+spring:
+  application:
+    name: order
+ 
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8093/auth2server/user
+      token-info-uri: http://localhost:8093/auth2server/user
+      preferTokenInfo: false

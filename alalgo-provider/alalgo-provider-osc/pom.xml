@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org</groupId>
+    <artifactId>alalgo-provider</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>alalgo-provider-osc</artifactId>
+  <packaging>war</packaging>
+  <build/>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.alalgo.provider</groupId>
+  		<artifactId>alalgo-provider-usc</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+	  <dependency> 
+    	<groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      </dependency> 
+     <!-- zipkin 客户端 -->	
+	<dependency>
+	    <groupId>org.springframework.cloud</groupId>
+	    <artifactId>spring-cloud-starter-zipkin</artifactId>
+	</dependency>  
+	  <!-- Feign实现声明式HTTP客户端 -->
+	 <dependency>
+		 <groupId>org.springframework.cloud</groupId>
+		 <artifactId>spring-cloud-starter-openfeign</artifactId>
+	 </dependency>
+	 
+  	<dependency>
+	    <groupId>org.springframework.cloud</groupId>
+	    <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+	</dependency>   	
+  </dependencies>
+</project>

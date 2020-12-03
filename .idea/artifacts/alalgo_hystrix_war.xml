@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="alalgo-hystrix:war">
+    <output-path>$PROJECT_DIR$/alalgo-hystrix/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>alalgo-hystrix</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="alalgo-hystrix-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="alalgo-hystrix:war exploded" />
+    </root>
+  </artifact>
+</component>

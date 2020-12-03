@@ -1,0 +1,28 @@
+server: 
+  port: 8071
+ 
+spring:
+  application:
+    name: osc
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloudIntegration
+    username: root
+    password: root
+  #zipkin client 配置  
+  zipkin:
+    base-url: http://localhost:8092 #zipkin 服务器地址
+  sleuth:
+    sampler:
+      probability: 1.0
+             
+eureka: 
+  instance:
+    prefer-ip-address: true  # 注册服务的时候使用服务的ip地址
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true   
+    
+        
+#debug: true 

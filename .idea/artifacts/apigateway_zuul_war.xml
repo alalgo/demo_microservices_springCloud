@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="apigateway-zuul:war">
+    <output-path>$PROJECT_DIR$/alalgo-gateway/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>apigateway-zuul</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="apigateway-zuul-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="apigateway-zuul:war exploded" />
+    </root>
+  </artifact>
+</component>

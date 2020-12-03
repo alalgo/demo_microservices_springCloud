@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/alalgo.iml" filepath="$PROJECT_DIR$/alalgo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-confserver/alalgo-confserver.iml" filepath="$PROJECT_DIR$/alalgo-confserver/alalgo-confserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-hystrix/alalgo-hystrix.iml" filepath="$PROJECT_DIR$/alalgo-hystrix/alalgo-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-oauth2server/alalgo-oauth2server.iml" filepath="$PROJECT_DIR$/alalgo-oauth2server/alalgo-oauth2server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-provider/alalgo-provider.iml" filepath="$PROJECT_DIR$/alalgo-provider/alalgo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-provider/alalgo-provider-osc/alalgo-provider-osc.iml" filepath="$PROJECT_DIR$/alalgo-provider/alalgo-provider-osc/alalgo-provider-osc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-provider/alalgo-provider-usc/alalgo-provider-usc.iml" filepath="$PROJECT_DIR$/alalgo-provider/alalgo-provider-usc/alalgo-provider-usc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-registry/alalgo-registry.iml" filepath="$PROJECT_DIR$/alalgo-registry/alalgo-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-zipkin/alalgo-zipkin.iml" filepath="$PROJECT_DIR$/alalgo-zipkin/alalgo-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alalgo-gateway/apigateway-zuul.iml" filepath="$PROJECT_DIR$/alalgo-gateway/apigateway-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-ribbon/consumer-user.iml" filepath="$PROJECT_DIR$/consumer-ribbon/consumer-user.iml" />
+    </modules>
+  </component>
+</project>

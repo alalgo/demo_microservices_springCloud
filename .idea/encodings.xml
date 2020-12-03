@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-confserver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-hystrix" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-oauth2server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-provider/alalgo-provider-osc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-provider/alalgo-provider-usc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-registry" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alalgo-zipkin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-ribbon" charset="UTF-8" />
+  </component>
+</project>

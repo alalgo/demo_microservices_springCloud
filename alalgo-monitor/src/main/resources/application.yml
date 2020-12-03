@@ -1,0 +1,30 @@
+#注册
+eureka:
+  client:
+    service-url:
+      defalutZone: http://localhost:8761/eureka/
+      
+server: 
+  port: 8092
+spring:
+  application:
+    name: monitor
+  boot:
+    admin:
+      context-path: /admin
+      discovery:
+        enabled: true
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+  endpoints: 
+    web:
+      exposure:
+        include: "*"        
+turbine:
+  app-config: osc,usc
+  aggregator:
+    cluster-config: default  #指定聚合哪些集群，多个使用”,”分割
+  cluster-name-expression: new String("default") #指定集群名称      

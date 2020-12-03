@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.security.oauth2.client.OAuth2RestTemplate</OriginalElement>
+  <nodes>
+    <node x="249.0" y="0.0">org.springframework.http.client.support.HttpAccessor</node>
+    <node x="55.99999999999997" y="80.0">org.springframework.web.client.RestOperations</node>
+    <node x="214.0" y="80.0">org.springframework.http.client.support.InterceptingHttpAccessor</node>
+    <node x="0.0" y="160.0">org.springframework.security.oauth2.client.OAuth2RestOperations</node>
+    <node x="100.12499999999999" y="240.0">org.springframework.security.oauth2.client.OAuth2RestTemplate</node>
+    <node x="216.25" y="160.0">org.springframework.web.client.RestTemplate</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.security.oauth2.client.OAuth2RestOperations" target="org.springframework.web.client.RestOperations">
+      <point x="0.0" y="-15.0" />
+      <point x="-34.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.client.RestTemplate" target="org.springframework.http.client.support.InterceptingHttpAccessor">
+      <point x="31.75" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.oauth2.client.OAuth2RestTemplate" target="org.springframework.web.client.RestTemplate">
+      <point x="42.5" y="-15.0" />
+      <point x="227.625" y="215.0" />
+      <point x="279.75" y="215.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.oauth2.client.OAuth2RestTemplate" target="org.springframework.security.oauth2.client.OAuth2RestOperations">
+      <point x="-42.5" y="-15.0" />
+      <point x="142.625" y="215.0" />
+      <point x="90.5" y="215.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.http.client.support.InterceptingHttpAccessor" target="org.springframework.http.client.support.HttpAccessor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.client.RestTemplate" target="org.springframework.web.client.RestOperations">
+      <point x="-31.75" y="-15.0" />
+      <point x="248.0" y="135.0" />
+      <point x="159.49999999999997" y="135.0" />
+      <point x="34.5" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="357.5" y="135.0" />
+  <SelectedNodes>
+    <node>org.springframework.security.oauth2.client.OAuth2RestTemplate</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

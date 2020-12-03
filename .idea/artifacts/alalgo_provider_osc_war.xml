@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="alalgo-provider-osc:war">
+    <output-path>$PROJECT_DIR$/alalgo-provider/alalgo-provider-osc/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>alalgo-provider-osc</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="alalgo-provider-osc-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="alalgo-provider-osc:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,13 @@
+server: 
+  port: 8777
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloudIntegration
+    username: root
+    password: root
+  activiti:
+#   database-schema-update: true
+    check-process-definitions: false
+    process-definition-location-prefix: /processes/
+#   history-level: full  

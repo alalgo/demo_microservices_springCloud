@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.security.oauth2.provider.ClientDetailsService</OriginalElement>
+  <nodes>
+    <node x="0.0" y="80.0">org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService</node>
+    <node x="240.0" y="80.0">org.springframework.security.oauth2.provider.client.JdbcClientDetailsService</node>
+    <node x="284.75" y="0.0">org.springframework.security.oauth2.provider.ClientRegistrationService</node>
+    <node x="70.0" y="0.0">org.springframework.security.oauth2.provider.ClientDetailsService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.security.oauth2.provider.client.JdbcClientDetailsService" target="org.springframework.security.oauth2.provider.ClientRegistrationService">
+      <point x="46.75" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.oauth2.provider.client.JdbcClientDetailsService" target="org.springframework.security.oauth2.provider.ClientDetailsService">
+      <point x="-46.75" y="-15.0" />
+      <point x="286.75" y="55.0" />
+      <point x="190.0" y="55.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService" target="org.springframework.security.oauth2.provider.ClientDetailsService">
+      <point x="0.0" y="-15.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="79.99999999999994" y="15.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

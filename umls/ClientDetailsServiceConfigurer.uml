@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer</OriginalElement>
+  <nodes>
+    <node x="0.0" y="240.0">org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer</node>
+    <node x="233.5" y="160.0">org.springframework.security.config.annotation.SecurityConfigurerAdapter</node>
+    <node x="267.5" y="0.0">org.springframework.security.config.annotation.SecurityBuilder</node>
+    <node x="242.0" y="240.0">org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2ClientConfigurer</node>
+    <node x="447.0" y="240.0">org.springframework.security.config.annotation.authentication.configurers.provisioning.JdbcUserDetailsManagerConfigurer</node>
+    <node x="213.0" y="80.0">org.springframework.security.config.annotation.SecurityConfigurer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.security.config.annotation.SecurityConfigurerAdapter" target="org.springframework.security.config.annotation.SecurityConfigurer">
+      <point x="-50.5" y="-15.0" />
+      <point x="284.0" y="135.0" />
+      <point x="290.5" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="111.0" y="215.0" />
+      <point x="267.1666666666667" y="215.0" />
+      <point x="-67.33333333333331" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.config.annotation.authentication.configurers.provisioning.JdbcUserDetailsManagerConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="575.0" y="215.0" />
+      <point x="401.8333333333333" y="215.0" />
+      <point x="67.33333333333331" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.config.annotation.SecurityConfigurer" target="org.springframework.security.config.annotation.SecurityBuilder">
+      <point x="0.0" y="-15.0" />
+      <point x="290.5" y="55.0" />
+      <point x="301.0" y="55.0" />
+      <point x="-33.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2ClientConfigurer" target="org.springframework.security.config.annotation.SecurityConfigurerAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.security.config.annotation.SecurityConfigurerAdapter" target="org.springframework.security.config.annotation.SecurityBuilder">
+      <point x="50.5" y="-15.0" />
+      <point x="385.0" y="135.0" />
+      <point x="378.5" y="135.0" />
+      <point x="378.5" y="55.0" />
+      <point x="368.0" y="55.0" />
+      <point x="33.5" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="367.5" y="135.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

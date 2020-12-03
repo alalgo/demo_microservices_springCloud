@@ -1,0 +1,40 @@
+http://localhost:8888/actuator/filters
+http://localhost:8888/actuator/routes
+http://localhost:8888/actuator/routes/details
+
+
+security:
+  oauth2:
+    client:
+      clientId: SampleClientId
+      clientSecret: secret
+      accessTokenUri: http://localhost:8093/auth2server/oauth/token
+      userAuthorizationUri: http://localhost:8093/auth2server/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8093/auth2server/user
+      
+
+swagger      
+swagger界面url：http://localhost:8888/swagger-ui.html
+与zuul整合涉及到 Swagger2Conf.java、Swagger2DocumentationConfig.java文件
+引入包 spring-boot-starter-swagger
+每个需要加入到swagger的微服务按swagger与springboot整合的方式正常配置 
+注解：
+@Api 控制器类上，可以给控制器增加描述和标签信息
+@ApiOperation 接口方法上，展开对接口的描述
+@ApiModel 实体类上， API 中所涉及到的对象做描述 
+@ApiModelProperty 实体类的属性上，描述实体类的属性
+@ApiIgnore: 接口方法上，Swagger文档不会显示拥有该注解的接口。
+文档信息配置：
+Swagger 还支持设置一些文档的版本号、联系人邮箱、网站、版权、开源协议等等信息，通过创建一个 ApiInfo 对象，并且使用 Docket.appInfo() 方法来设置
+接口过滤(有些时候我们并不是希望所有的 Rest API 都呈现在文档上)：
+Swagger2 提供给我们了两种方式配置，一种是基于 @ApiIgnore 注解，另一种是在 信息配置类中Docket 上增加筛选， apis() 和 paths()
+
+RateLimiter
+RateLimiter是Google开源的实现了令牌桶算法的限流工具（速率限制器）。http://ifeve.com/guava-ratelimiter/
+Spring Cloud Zuul RateLimiter结合Zuul对RateLimiter进行了封装，通过实现ZuulFilter提供了服务限流功能    
+限流粒度/类型 	       说明
+Authenticated User 	针对请求的用户进行限流
+Request Origin 		针对请求的Origin进行限流
+URL 				针对URL/接口进行限流
+Service 			针对服务进行限流，如果没有配置限流类型，则此类型生效

@@ -1,0 +1,12 @@
+zipkin
+zipkin 面板地址： http://localhost:8092/zipkin/
+需要进行链路追踪的微服务 只需要引入spring-cloud-starter-zipkin包，在配置文件中配置zipkin服务器地址
+
+hystrix
+通过 http://localhost:8092/hystrix 可看到hystrix dashboard 界面
+在上面界面url输入框 输入http://localhost:8072/actuator/hystrix.stream 点击monitor 即可进行监控
+配置好turbine后，可输入http://localhost:8092/turbine.stream 聚合多个hystrix监控
+
+spring boot admin
+http://localhost:8092/admin 可看到admin界面
+客服端不需要配置，服务端通过注册中心便可获取到所有微服务，但要注意配置客户端/actuator权限。

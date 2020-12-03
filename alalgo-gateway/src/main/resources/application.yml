@@ -1,0 +1,72 @@
+spring:
+  application:
+    name: gateway-zuul
+  #数据库链接
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/cloudIntegration
+#    username: root
+#    password: root
+
+security:
+  oauth2:
+    client:
+      clientId: SampleClientId
+      clientSecret: secret
+      accessTokenUri: http://localhost:8093/auth2server/oauth/token
+      userAuthorizationUri: http://localhost:8093/auth2server/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8093/auth2server/user  
+    
+       
+#local:
+#  client:
+#    clientId: SampleClientId
+#    clientSecret: secret
+#    accessTokenUri: http://localhost:8093/auth2server/oauth/token
+#    userAuthorizationUri: http://localhost:8093/auth2server/oauth/authorize
+#    #registered-redirect-uri: http://localhost:8888/login
+#  resource:
+#    userInfoUri: http://localhost:8093/auth2server/user
+#github:
+#  client:
+#    clientId: 41898a45a555ccbe67b8
+#    clientSecret: 9a76f7afae1a763dd0cc84806cc607990c804362
+#    accessTokenUri: https://github.com/login/oauth/access_token
+#    userAuthorizationUri: https://github.com/login/oauth/authorize
+#  resource:
+#    userInfoUri: https://api.github.com/user
+
+server: 
+  port: 8888
+  servlet:
+    #context-path: /gateway
+    session:
+      cookie:
+        name: UISESSION
+ 
+            
+#zuul 配置
+zuul:  
+  sensitive-headers: Cookie,Set-Cookie #zuul默认对转发的request，会把header清空，为了传递原始的header信息到最终的微服务，在此处配置
+  routes:
+    usc:
+      path: /usc/**
+      url: http://localhost:8072
+    oauthserver: 
+      path: /oauthserver/**
+      url:  http://localhost:8093/auth2server
+  ratelimit: #google RateLimiter
+    enabled: false
+    
+        
+#注册
+eureka:
+  client:
+    service-url:
+      defalutZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'             

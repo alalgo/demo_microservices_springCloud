@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="alalgo-zipkin:war">
+    <output-path>$PROJECT_DIR$/alalgo-zipkin/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>alalgo-zipkin</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="alalgo-zipkin-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="alalgo-zipkin:war exploded" />
+    </root>
+  </artifact>
+</component>

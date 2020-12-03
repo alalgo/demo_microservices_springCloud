@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="alalgo-confserver" />
+        <module name="alalgo-hystrix" />
+        <module name="alalgo-oauth2server" />
+        <module name="alalgo-provider-osc" />
+        <module name="alalgo-provider-usc" />
+        <module name="alalgo-registry" />
+        <module name="alalgo-zipkin" />
+        <module name="apigateway-zuul" />
+        <module name="consumer-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alalgo" target="1.8" />
+      <module name="alalgo-confserver" target="1.8" />
+      <module name="alalgo-hystrix" target="1.8" />
+      <module name="alalgo-oauth2server" target="1.8" />
+      <module name="alalgo-provider" target="1.8" />
+      <module name="alalgo-provider-osc" target="1.8" />
+      <module name="alalgo-provider-usc" target="1.8" />
+      <module name="alalgo-registry" target="1.8" />
+      <module name="alalgo-zipkin" target="1.8" />
+      <module name="apigateway-zuul" target="1.8" />
+      <module name="consumer-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alalgo-confserver" options="-parameters" />
+      <module name="alalgo-hystrix" options="-parameters" />
+      <module name="alalgo-oauth2server" options="-parameters" />
+      <module name="alalgo-provider-osc" options="-parameters" />
+      <module name="alalgo-provider-usc" options="-parameters" />
+      <module name="alalgo-registry" options="-parameters" />
+      <module name="alalgo-zipkin" options="-parameters" />
+      <module name="apigateway-zuul" options="-parameters" />
+      <module name="consumer-user" options="-parameters" />
+    </option>
+  </component>
+</project>
