@@ -9,6 +9,7 @@ import org.alalgo.usc.dos.UserDO;
 
 public interface SecurityService {
 	public List<UserDO> getUser(String username,int page,int countPerPage);
+	public UserDO getUserByName(String username);
 	public List<RoleDO> getRoleByUserId(Integer userId);
 	public List<PermissionDO> getPermissionByUserId(Integer userId);
 	

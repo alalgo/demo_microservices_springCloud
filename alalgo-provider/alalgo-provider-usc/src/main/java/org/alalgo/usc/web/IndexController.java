@@ -16,6 +16,7 @@ public class IndexController {
 	@Autowired
 	private SecurityService securityService;
 	
+    //======= test redis cache
 	@ApiOperation(value = "获取完整菜单列表")
 	@GetMapping("/index")
 	public @ApiParam("菜单列表") IndexVO indexInfo() {

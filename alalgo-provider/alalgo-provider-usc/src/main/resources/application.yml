@@ -18,10 +18,19 @@ spring:
 #        retry:
 #          enabled: true
   datasource:
-    url: jdbc:mysql://192.168.6.201:3306/cloudIntegration
-    username: root
-    password: root
-
+      name: test
+      url: jdbc:mysql://192.168.6.201:3306/cloudIntegration
+      username: root
+      password: root
+#  session:
+#    store-type: redis
+#    timeout: 30m        
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+#  rabbitmq:
+#    addresses: 127.0.0.1:5672
+    
 mybatis:
   config-location: classpath:mybatis-config.xml #配置 MyBatis 基础属性
   mapper-locations: classpath:org/alalgo/usc/mapper/*.xml #配置 Mappery映射文件位置

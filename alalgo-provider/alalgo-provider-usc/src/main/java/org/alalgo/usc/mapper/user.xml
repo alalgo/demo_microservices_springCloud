@@ -11,19 +11,18 @@
         <result column="enable" property="enable" jdbcType="TINYINT" />
     </resultMap>
 
-    <sql id="Base_Where" >
-        <if test="#{username}  != null">
-            and username = #{username}
-        </if>
-    </sql>
-
     <select id="getUser" resultMap="userInfo"  >
        SELECT * FROM user WHERE 1=1  
-		<!--  <include refid="Base_Where" /> -->       
     </select>
     
-    <insert id="insertUser">
+    <select id="getUserByName" resultMap="userInfo"  >
+       SELECT * FROM user WHERE 1=1  
+       and username = #{username}
+    </select>    
+    
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="userId">
     	insert into user (userId,username,password,phoneNumber,createTime,updateTime,enable)
     	values (#{userId},#{username},#{password},#{phoneNumber},#{createTime},#{updateTime},#{enable})
     </insert>
+    
 </mapper>

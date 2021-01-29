@@ -10,6 +10,7 @@ import org.apache.ibatis.session.RowBounds;
 public interface UserMapper {
 	
 	public List<UserDO> getUser(String username,RowBounds rowBounds);
+	public UserDO getUserByName(String username);
 	
    // @Update("update user set username=#{username},password=#{password},phoneNumber=#{phoneNumber},enable=#{enable} where userId=#{userId}")  	
     public void updateUser(UserDO userDO);

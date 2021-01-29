@@ -15,7 +15,7 @@ import org.quartz.SchedulerException;
 import org.quartz.TriggerBuilder;
 import org.quartz.TriggerKey;
 import org.quartz.impl.triggers.CronTriggerImpl;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 /**
  * 
 * @Description: 动态任务工厂类
@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
 * @date 2019年4月12日
 *
  */
-@Component
+@Service
 public class SchedulerManager {
 	 @Resource
 	 private Scheduler scheduler;
