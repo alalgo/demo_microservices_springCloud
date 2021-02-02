@@ -19,10 +19,38 @@
        SELECT * FROM user WHERE 1=1  
        and username = #{username}
     </select>    
-    
-    <insert id="insertUser" useGeneratedKeys="true" keyProperty="userId">
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="userId" >
     	insert into user (userId,username,password,phoneNumber,createTime,updateTime,enable)
     	values (#{userId},#{username},#{password},#{phoneNumber},#{createTime},#{updateTime},#{enable})
     </insert>
+    <insert id="insertUsers"  >
+	    	insert  into user (userId,username,password,phoneNumber,createTime,updateTime,enable)
+	    	values 	    
+	    	<foreach collection="list" item="it" separator=",">
+			 (#{it.userId},#{it.username},#{it.password},#{it.phoneNumber},#{it.createTime},#{it.updateTime},#{it.enable})
+		    </foreach>	    
+    </insert>   
+    <update id="updateUsers">
     
+    </update> 
+    <insert id="insertOrUpdateUser">
+    	insert into user (userId,username,password,phoneNumber,createTime,updateTime,enable)
+    	values 
+    	(#{userId},#{username},#{password},#{phoneNumber},#{createTime},#{updateTime},#{enable})    	
+		ON DUPLICATE KEY UPDATE 
+    	username=values(username),password=values(password),phoneNumber=values(phoneNumber),createTime=values(createTime),updateTime=values(updateTime),enable=values(enable)   
+    </insert> 
+    <insert id="insertOrUpdateUsers">
+    	insert into user (userId,username,password,phoneNumber,createTime,updateTime,enable)
+    	values 
+    	<foreach collection="list" item="it" separator=",">
+		 (#{it.userId},#{it.username},#{it.password},#{it.phoneNumber},#{it.createTime},#{it.updateTime},#{it.enable})
+	    </foreach>	    	
+    	ON DUPLICATE KEY UPDATE  
+    	username=values(username),password=values(password),phoneNumber=values(phoneNumber),createTime=values(createTime),updateTime=values(updateTime),enable=values(enable)   
+    </insert>          
+    <insert id="insertUserCommon" useGeneratedKeys="true" keyProperty="userId" statementType="STATEMENT">
+    	insert into user (userId,username,password,phoneNumber,createTime,updateTime,enable)
+    	values (${userId},${username},${password},${phoneNumber},${createTime},${updateTime},${enable})
+    </insert>    
 </mapper>

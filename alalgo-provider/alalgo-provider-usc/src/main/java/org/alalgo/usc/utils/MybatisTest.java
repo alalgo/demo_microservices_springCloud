@@ -2,7 +2,10 @@ package org.alalgo.usc.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
+import java.util.List;
 
 import org.alalgo.usc.dos.UserDO;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
@@ -16,34 +19,93 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.transaction.TransactionFactory;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * 编码执行sql，了解mybatis底层原理
  * @author security
  *
  */
+@Slf4j
 public class MybatisTest {
 
 	public static void main(String[] args) throws IOException {
-		try(
-			//SqlSession sqlSession = buildNoxml();
-			SqlSession sqlSession = buildxml();
-		){/*
-			UserDO userDo = new UserDO();
-			userDo.setUserId(567);
-			userDo.setUsername("JACK");
-			userDo.setPassword("343432");
-			userDo.setPhoneNumber("12345676543");
-			userDo.setEnable(true);
-			userDo.setCreateTime(new Date());
-			userDo.setUpdateTime(new Date());
-			sqlSession.insert("org.alalgo.usc.model.UserMapper.insertUser",userDo);	
-			*/
-			sqlSession.selectList("org.alalgo.usc.model.UserMapper.getUserByName");
-			//sqlSession.select
-			sqlSession.commit();
-		}
-		MappedStatement a;
+		//batchInsert();
+		//insertOrUpdate();
+		insertOrUpdates();
 	}
+	private static void  insertOrUpdate() throws IOException {
+		SqlSession sqlSession = buildxml();
+		try{
+				UserDO userDo = new UserDO();
+				userDo.setUserId(6314);
+				userDo.setUsername("key");
+				userDo.setPassword("343432");
+				userDo.setPhoneNumber("12345676543");
+				userDo.setEnable(true);
+				userDo.setCreateTime(new Date());
+				userDo.setUpdateTime(new Date());
+
+			sqlSession.insert("org.alalgo.usc.model.UserMapper.insertOrUpdateUser",userDo);
+			sqlSession.commit();
+		}catch(Exception e) {
+			sqlSession.rollback();
+			log.error("", e);
+		}finally {
+			sqlSession.close();
+		}		
+	}
+	private static void batchInsert() throws IOException {
+		SqlSession sqlSession = buildxml();
+		try{
+			List<UserDO> list = new ArrayList();
+			for(int i=0 ; i<10 ;i++) {
+				UserDO userDo = new UserDO();
+				//userDo.setUserId(i);
+				userDo.setUsername("JACK");
+				userDo.setPassword("343432");
+				userDo.setPhoneNumber("12345676543");
+				userDo.setEnable(true);
+				userDo.setCreateTime(new Date());
+				userDo.setUpdateTime(new Date());
+				list.add(userDo);
+			}
+			sqlSession.insert("org.alalgo.usc.model.UserMapper.insertUsers",list);
+			//sqlSession.selectList("org.alalgo.usc.model.UserMapper.getUserByName");
+			sqlSession.commit();
+			list.stream().forEach((item)->{System.out.println(item.getUserId());});
+		}catch(Exception e) {
+			sqlSession.rollback();
+			log.error("", e);
+		}finally {
+			sqlSession.close();
+		}		
+	}
+	private static void insertOrUpdates() throws IOException {
+		SqlSession sqlSession = buildxml();
+		try{
+			List<UserDO> list = new ArrayList();
+			for(int i=6314 ; i<6322 ;i++) {
+				UserDO userDo = new UserDO();
+				userDo.setUserId(i);
+				userDo.setUsername("xu");
+				userDo.setPassword("343432");
+				userDo.setPhoneNumber("12345676543");
+				userDo.setEnable(true);
+				userDo.setCreateTime(new Date());
+				userDo.setUpdateTime(new Date());
+				list.add(userDo);
+			}
+			sqlSession.insert("org.alalgo.usc.model.UserMapper.insertOrUpdateUsers",list);
+			sqlSession.commit();
+			list.stream().forEach((item)->{System.out.println(item.getUserId());});
+		}catch(Exception e) {
+			sqlSession.rollback();
+			log.error("", e);
+		}finally {
+			sqlSession.close();
+		}		
+	}	
 	/**
 	 * 不使用xml配置文件，完全代码配置环境，构建SqlSessionFactory
 	 * @return 
@@ -82,7 +144,6 @@ public class MybatisTest {
 		InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
 		SqlSessionFactory sqlFactory = new SqlSessionFactoryBuilder().build(inputStream);
 		Collection<MappedStatement> c = sqlFactory.getConfiguration().getMappedStatements();
-		c.stream().forEach(item->{System.out.println(item.getId());});
 		return sqlFactory.openSession();
 	}
 }
