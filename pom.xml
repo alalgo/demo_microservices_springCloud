@@ -44,7 +44,7 @@
     <module>alalgo-zipkin</module>
     <module>alalgo-hystrix</module>
     <module>alalgo-confserver</module>
-    <module>alalgo-common</module>
+    <module>alalgo-demo</module>
     <module>alalgo-monitor</module>
     <module>alalgo-admin</module>
   </modules>
@@ -62,7 +62,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<!--  <scope>provided</scope>-->
 		</dependency>
         <dependency>
             <groupId>mysql</groupId>

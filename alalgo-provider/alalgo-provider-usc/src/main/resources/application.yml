@@ -1,5 +1,6 @@
-#server: 
-#  port: ${random.int[10000,19999]}
+server: 
+  port: 100
+#debug: true
  
 spring:
   application:
@@ -30,10 +31,10 @@ spring:
 #    port: 6379
 #  rabbitmq:
 #    addresses: 127.0.0.1:5672
-    
+      
 mybatis:
   config-location: classpath:mybatis-config.xml #配置 MyBatis 基础属性
-  mapper-locations: classpath:org/alalgo/usc/mapper/*.xml #配置 Mappery映射文件位置
+  #mapper-locations: classpath:org/alalgo/usc/mapper/*.xml #配置 Mappery映射文件位置
   type-aliases-package: org.alalgo.usc.model #配置项目中实体类包路径
    
    
@@ -41,6 +42,8 @@ logging:
   level:
     org.springframework.jdbc.datasource: debug
     org.alalgo: debug
+    org.apache: error
+    
   #配置quartz存储在数据库中，默认存储在内存中
  #quartz:
  #  job-store-type: jdbc

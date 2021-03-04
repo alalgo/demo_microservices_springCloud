@@ -5,17 +5,6 @@
     <artifactId>alalgo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>alalgo-common</artifactId>
+  <artifactId>alalgo-demo</artifactId>
   <packaging>war</packaging>
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>

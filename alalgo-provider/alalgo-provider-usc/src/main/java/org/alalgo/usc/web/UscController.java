@@ -29,12 +29,12 @@ public class UscController {
 	
     @GetMapping("/alluser")
     public List<UserDO> getUsers(int page,int countPerPage) {
-    	return securityService.getUser(null,page,countPerPage);
+    	return securityService.getAllUser(page,countPerPage);
     }	
     @GetMapping("/user")
-    public List<UserDO> getUser(String username) {
+    public UserDO getUser(int userId) {
         //return securityService.getUser(username);
-    	return securityService.getUser(username,0,0);
+    	return securityService.getUserById(userId);
     }
     @GetMapping("/updateuser")
     public String updateuser() {
@@ -68,8 +68,8 @@ public class UscController {
     
     //======= test redis spring session
     @GetMapping("/login")
-    public ResultVO login(String username,String password,HttpSession session) {
-    	UserDO userDO = securityService.getUserByName(username);
+    public ResultVO login(int userId,String password,HttpSession session) {
+    	UserDO userDO = securityService.getUserById(userId);
     	if(userDO == null) {
     		return ResultVO.error("用户不存在");
     	}

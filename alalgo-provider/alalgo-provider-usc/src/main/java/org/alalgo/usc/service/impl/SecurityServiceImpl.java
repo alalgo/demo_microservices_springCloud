@@ -3,6 +3,7 @@ package org.alalgo.usc.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.alalgo.usc.conf.mybatis.Paginator;
 import org.alalgo.usc.dos.Menu;
 import org.alalgo.usc.dos.PermissionDO;
 import org.alalgo.usc.dos.RoleDO;
@@ -10,8 +11,8 @@ import org.alalgo.usc.dos.UserDO;
 import org.alalgo.usc.model.MenuMapper;
 import org.alalgo.usc.model.PermissionMapper;
 import org.alalgo.usc.model.RoleMapper;
+import org.alalgo.usc.model.UserMapper;
 import org.alalgo.usc.service.SecurityService;
-import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -23,8 +24,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Service
 public class SecurityServiceImpl implements SecurityService {
-	//@Autowired
-	//private UserMapper userMapper;
+	@Autowired
+	private UserMapper userMapper;
 	@Autowired
 	private RoleMapper roleMapper; 
 	@Autowired
@@ -33,15 +34,15 @@ public class SecurityServiceImpl implements SecurityService {
 	private MenuMapper menuMapper;
 	@Autowired
 	private SecurityService securityService;
-    @Autowired
-    private AmqpTemplate amqpTemplate;
+    //@Autowired
+    //private AmqpTemplate amqpTemplate;
     
 	@Override
-	public List<UserDO> getUser(String username,int page,int countPerPage) {
+	public List<UserDO> getAllUser(int page,int countPerPage) {
 		if(page<=0 || countPerPage<=0)
 			throw new IllegalArgumentException();
-		return null;
-		//return userMapper.getUser(username, new RowBounds((page-1)*countPerPage, countPerPage));
+		List<UserDO> allUser = userMapper.getUser(null, new Paginator(page, countPerPage));
+		return allUser;
 	}
 	@Override
 	public List<RoleDO> getRoleByUserId(Integer userId) {
@@ -82,11 +83,11 @@ public class SecurityServiceImpl implements SecurityService {
 	public void insertUser(UserDO userDO)  {
 		log.debug(">>>insertUser transactionname:" + TransactionSynchronizationManager.getCurrentTransactionName());
 		//userMapper.insertUser(userDO);
-		amqpTemplate.convertAndSend("registMsgQueue", userDO.getPhoneNumber() + " 欢迎 注册成功");
+		//amqpTemplate.convertAndSend("registMsgQueue", userDO.getPhoneNumber() + " 欢迎 注册成功");
 	}
 	@Override
-	public UserDO getUserByName(String username) {
+	public UserDO getUserById(int userId) {
+		
 		return null;
-		//return userMapper.getUserByName(username);
 	}
 }

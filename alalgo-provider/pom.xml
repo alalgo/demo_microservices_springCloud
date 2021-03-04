@@ -13,9 +13,5 @@
   	<module>alalgo-provider-osc</module>
   	<module>alalgo-provider-order</module>
   	<module>alalgo-provider-bpm</module>
-  </modules>
-  
-  <dependencies>  
-
-  </dependencies>  
+  </modules>  
 </project>
